@@ -1,0 +1,1460 @@
+{
+    "id": 9,
+    "name": "Large Example Network",
+    "lat": 0.0,
+    "lng": 0.0,
+    "inDegrees": true,
+    "nodes": [
+        {
+            "id": 46,
+            "name": "Fort Meade",
+            "lat": 39.05,
+            "lng": -76.75,
+            "inDegrees": true
+        },
+        {
+            "id": 47,
+            "name": "Sao Paulo",
+            "lat": -23.514,
+            "lng": -46.632,
+            "inDegrees": true
+        },
+        {
+            "id": 48,
+            "name": "London",
+            "lat": 51.57,
+            "lng": -0.007,
+            "inDegrees": true
+        },
+        {
+            "id": 49,
+            "name": "Azores",
+            "lat": 38.732,
+            "lng": -27.241,
+            "inDegrees": true
+        },
+        {
+            "id": 50,
+            "name": "Lagos",
+            "lat": 6.449,
+            "lng": 3.488,
+            "inDegrees": true
+        }
+    ],
+    "links": [
+        {
+            "id": 114,
+            "fromNode": 46,
+            "toNode": 49,
+            "name": "Fort Meade <-> Azores",
+            "model": "100BaseT"
+        },
+        {
+            "id": 115,
+            "fromNode": 49,
+            "toNode": 47,
+            "name": "Azores <-> Sao Paulo",
+            "model": "100BaseT"
+        },
+        {
+            "id": 116,
+            "fromNode": 48,
+            "toNode": 56,
+            "name": "London <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 117,
+            "fromNode": 49,
+            "toNode": 46,
+            "name": "Fort Meade <-> Azores",
+            "model": "100BaseT"
+        },
+        {
+            "id": 118,
+            "fromNode": 50,
+            "toNode": 56,
+            "name": "Lagos <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 119,
+            "fromNode": 47,
+            "toNode": 49,
+            "name": "Azores <-> Sao Paulo",
+            "model": "100BaseT"
+        },
+        {
+            "id": 120,
+            "fromNode": 50,
+            "toNode": 49,
+            "name": "Azores <-> Lagos",
+            "model": "100BaseT"
+        },
+        {
+            "id": 121,
+            "fromNode": 49,
+            "toNode": 48,
+            "name": "Azores <-> London",
+            "model": "100BaseT"
+        },
+        {
+            "id": 122,
+            "fromNode": 49,
+            "toNode": 50,
+            "name": "Azores <-> Lagos",
+            "model": "100BaseT"
+        },
+        {
+            "id": 123,
+            "fromNode": 48,
+            "toNode": 49,
+            "name": "Azores <-> London",
+            "model": "100BaseT"
+        },
+        {
+            "id": 124,
+            "fromNode": 56,
+            "toNode": 50,
+            "name": "Lagos <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 125,
+            "fromNode": 56,
+            "toNode": 48,
+            "name": "London <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 126,
+            "fromNode": 49,
+            "toNode": 58,
+            "name": "Azores <-> Bogota Datacenter",
+            "model": "100BaseT"
+        },
+        {
+            "id": 127,
+            "fromNode": 56,
+            "toNode": 58,
+            "name": "Bogota Datacenter <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 128,
+            "fromNode": 58,
+            "toNode": 49,
+            "name": "Azores <-> Bogota Datacenter",
+            "model": "100BaseT"
+        },
+        {
+            "id": 129,
+            "fromNode": 58,
+            "toNode": 56,
+            "name": "Bogota Datacenter <-> Egypt Subnet",
+            "model": "1000BaseX"
+        }
+    ],
+    "demands": [
+        {
+            "id": 25,
+            "name": "London --> Desktop 1",
+            "fromNode": 48,
+            "toNode": 62,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 100000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 25000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 25000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 25000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 200000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 200000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 250000
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Desktop 2 --> Lagos",
+            "fromNode": 65,
+            "toNode": 50,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 50000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 50000
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Sao Paulo --> London",
+            "fromNode": 47,
+            "toNode": 48,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 100000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 1000000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 10000000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 1000000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 5000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 25000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 250000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 500000
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Fort Meade --> Lagos",
+            "fromNode": 46,
+            "toNode": 50,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 10000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 5000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 5000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 5000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 25000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 20000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 20000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 50000
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Desktop 4 --> Desktop 1",
+            "fromNode": 66,
+            "toNode": 62,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 100000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 100000
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Fort Meade --> Server 1",
+            "fromNode": 46,
+            "toNode": 59,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 500000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 500000
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Desktop 2 --> Desktop 3",
+            "fromNode": 65,
+            "toNode": 63,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 10000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 10000
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Server 3 --> Sao Paulo",
+            "fromNode": 61,
+            "toNode": 47,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 10000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 10000
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Server 2 --> London",
+            "fromNode": 60,
+            "toNode": 48,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 100000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 100000
+                }
+            ]
+        }
+    ],
+    "subnets": [
+        {
+            "id": 10,
+            "name": "Egypt Subnet",
+            "lat": 30.09,
+            "lng": 31.22,
+            "inDegrees": true,
+            "nodes": [
+                {
+                    "id": 51,
+                    "name": "Nile 3",
+                    "lat": 26.56,
+                    "lng": 31.683,
+                    "inDegrees": true
+                },
+                {
+                    "id": 52,
+                    "name": "Nile 1",
+                    "lat": 30.075,
+                    "lng": 31.241,
+                    "inDegrees": true
+                },
+                {
+                    "id": 53,
+                    "name": "Nile 4",
+                    "lat": 24.93,
+                    "lng": 32.89,
+                    "inDegrees": true
+                },
+                {
+                    "id": 54,
+                    "name": "Nile 5",
+                    "lat": 23.71,
+                    "lng": 32.27,
+                    "inDegrees": true
+                },
+                {
+                    "id": 55,
+                    "name": "Nile 0",
+                    "lat": 31.301,
+                    "lng": 29.915,
+                    "inDegrees": true
+                },
+                {
+                    "id": 56,
+                    "name": "Nile Gateway",
+                    "lat": 31.415,
+                    "lng": 27.149,
+                    "inDegrees": true
+                },
+                {
+                    "id": 57,
+                    "name": "Nile 2",
+                    "lat": 28.086,
+                    "lng": 30.758,
+                    "inDegrees": true
+                }
+            ],
+            "links": [
+                {
+                    "id": 130,
+                    "fromNode": 54,
+                    "toNode": 56,
+                    "name": "Nile 5 <-> Nile Gateway",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 131,
+                    "fromNode": 53,
+                    "toNode": 54,
+                    "name": "Nile 4 <-> Nile 5",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 132,
+                    "fromNode": 51,
+                    "toNode": 57,
+                    "name": "Nile 2 <-> Nile 3",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 133,
+                    "fromNode": 53,
+                    "toNode": 51,
+                    "name": "Nile 3 <-> Nile 4",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 134,
+                    "fromNode": 56,
+                    "toNode": 54,
+                    "name": "Nile 5 <-> Nile Gateway",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 135,
+                    "fromNode": 57,
+                    "toNode": 51,
+                    "name": "Nile 2 <-> Nile 3",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 136,
+                    "fromNode": 52,
+                    "toNode": 55,
+                    "name": "Nile 1 <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 137,
+                    "fromNode": 56,
+                    "toNode": 55,
+                    "name": "Nile Gateway <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 138,
+                    "fromNode": 52,
+                    "toNode": 57,
+                    "name": "Nile 1 <-> Nile 2",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 139,
+                    "fromNode": 57,
+                    "toNode": 52,
+                    "name": "Nile 1 <-> Nile 2",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 140,
+                    "fromNode": 55,
+                    "toNode": 56,
+                    "name": "Nile Gateway <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 141,
+                    "fromNode": 55,
+                    "toNode": 52,
+                    "name": "Nile 1 <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 142,
+                    "fromNode": 54,
+                    "toNode": 53,
+                    "name": "Nile 4 <-> Nile 5",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 143,
+                    "fromNode": 51,
+                    "toNode": 53,
+                    "name": "Nile 3 <-> Nile 4",
+                    "model": "100BaseT"
+                }
+            ],
+            "demands": [],
+            "subnets": []
+        },
+        {
+            "id": 11,
+            "name": "Bogota Datacenter",
+            "lat": 4.661,
+            "lng": -74.27,
+            "inDegrees": false,
+            "nodes": [
+                {
+                    "id": 58,
+                    "name": "Gateway",
+                    "lat": 9.66,
+                    "lng": -31.4,
+                    "inDegrees": false
+                },
+                {
+                    "id": 59,
+                    "name": "Server 1",
+                    "lat": -44.69,
+                    "lng": -51.54,
+                    "inDegrees": false
+                },
+                {
+                    "id": 60,
+                    "name": "Server 2",
+                    "lat": -43.7,
+                    "lng": -29.8,
+                    "inDegrees": false
+                },
+                {
+                    "id": 61,
+                    "name": "Server 3",
+                    "lat": -44.5,
+                    "lng": -6.64,
+                    "inDegrees": false
+                }
+            ],
+            "links": [
+                {
+                    "id": 144,
+                    "fromNode": 58,
+                    "toNode": 59,
+                    "name": "Gateway <-> Server 1",
+                    "model": "1000BaseX"
+                },
+                {
+                    "id": 145,
+                    "fromNode": 58,
+                    "toNode": 64,
+                    "name": "Gateway <-> Local Workstations",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 146,
+                    "fromNode": 64,
+                    "toNode": 58,
+                    "name": "Gateway <-> Local Workstations",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 147,
+                    "fromNode": 58,
+                    "toNode": 61,
+                    "name": "Gateway <-> Server 3",
+                    "model": "1000BaseX"
+                },
+                {
+                    "id": 148,
+                    "fromNode": 59,
+                    "toNode": 58,
+                    "name": "Gateway <-> Server 1",
+                    "model": "1000BaseX"
+                },
+                {
+                    "id": 149,
+                    "fromNode": 61,
+                    "toNode": 58,
+                    "name": "Gateway <-> Server 3",
+                    "model": "1000BaseX"
+                },
+                {
+                    "id": 150,
+                    "fromNode": 60,
+                    "toNode": 58,
+                    "name": "Gateway <-> Server 2",
+                    "model": "1000BaseX"
+                },
+                {
+                    "id": 151,
+                    "fromNode": 58,
+                    "toNode": 60,
+                    "name": "Gateway <-> Server 2",
+                    "model": "1000BaseX"
+                }
+            ],
+            "demands": [],
+            "subnets": [
+                {
+                    "id": 12,
+                    "name": "Local Workstations",
+                    "lat": -45.11,
+                    "lng": 27.85,
+                    "inDegrees": false,
+                    "nodes": [
+                        {
+                            "id": 62,
+                            "name": "Desktop 1",
+                            "lat": -7.5,
+                            "lng": -29.32,
+                            "inDegrees": false
+                        },
+                        {
+                            "id": 63,
+                            "name": "Desktop 3",
+                            "lat": -7.5,
+                            "lng": -11.82,
+                            "inDegrees": false
+                        },
+                        {
+                            "id": 64,
+                            "name": "Workstation Router",
+                            "lat": 6.705,
+                            "lng": -16.82,
+                            "inDegrees": false
+                        },
+                        {
+                            "id": 65,
+                            "name": "Desktop 2",
+                            "lat": -7.5,
+                            "lng": -20.0,
+                            "inDegrees": false
+                        },
+                        {
+                            "id": 66,
+                            "name": "Desktop 4",
+                            "lat": -7.5,
+                            "lng": -2.84,
+                            "inDegrees": false
+                        }
+                    ],
+                    "links": [
+                        {
+                            "id": 152,
+                            "fromNode": 64,
+                            "toNode": 66,
+                            "name": "Desktop 4 <-> Workstation Router",
+                            "model": "10BaseT"
+                        },
+                        {
+                            "id": 153,
+                            "fromNode": 64,
+                            "toNode": 65,
+                            "name": "Desktop 2 <-> Workstation Router",
+                            "model": "10BaseT"
+                        },
+                        {
+                            "id": 154,
+                            "fromNode": 63,
+                            "toNode": 64,
+                            "name": "Desktop 3 <-> Workstation Router",
+                            "model": "10BaseT"
+                        },
+                        {
+                            "id": 155,
+                            "fromNode": 66,
+                            "toNode": 64,
+                            "name": "Desktop 4 <-> Workstation Router",
+                            "model": "10BaseT"
+                        },
+                        {
+                            "id": 156,
+                            "fromNode": 62,
+                            "toNode": 64,
+                            "name": "Desktop 1 <-> Workstation Router",
+                            "model": "10BaseT"
+                        },
+                        {
+                            "id": 157,
+                            "fromNode": 64,
+                            "toNode": 62,
+                            "name": "Desktop 1 <-> Workstation Router",
+                            "model": "10BaseT"
+                        },
+                        {
+                            "id": 158,
+                            "fromNode": 64,
+                            "toNode": 63,
+                            "name": "Desktop 3 <-> Workstation Router",
+                            "model": "10BaseT"
+                        },
+                        {
+                            "id": 159,
+                            "fromNode": 65,
+                            "toNode": 64,
+                            "name": "Desktop 2 <-> Workstation Router",
+                            "model": "10BaseT"
+                        }
+                    ],
+                    "demands": [],
+                    "subnets": []
+                }
+            ]
+        }
+    ]
+}

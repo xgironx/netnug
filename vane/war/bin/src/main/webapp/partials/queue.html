@@ -1,0 +1,42 @@
+<style type="text/css">
+.queue{
+    width: 100%;
+    padding: 1em;
+}
+
+.queue{
+    width: 100%;
+}
+
+#analysis-queue{
+    margin: 1em;
+}
+</style>
+
+<div class="queue">
+    <a id="analysis-queue" class="btn btn-primary" href="#!/queue">Analysis Queue</a>
+    <button class="btn btn-primary" ng-click="refresh()">Refresh</button>
+
+    <div class="alert alert-warning" ng-if="queue.loading">
+        <strong>Please Wait</strong>
+        Loading queued projects
+    </div>
+    <div class="alert alert-danger" ng-if="queue.error">
+        <strong>Error</strong>
+        Could not contact server: {{queue.message}}
+    </div>
+    <div class="alert alert-info" ng-if="queue.empty">
+        <strong>Nothing in the queue.</strong>
+        Create a new project and then queue it for analysis.
+    </div>
+
+    <div class="project card" ng-repeat="project in queue.data">
+        <div class="card-block">
+            <h4 class="card-title">{{project.name}}<span class="text-muted" ng-if="!project.name">(No name)</span> <small><code>{{project.id}}</code></small></h4>
+            <span class="text-muted" ng-if="!project.description">(No description)</span>{{project.description}}
+        </div>
+        <div class="card-block">
+            <a class="btn btn-primary" ng-href="#!/map/{{project.id}}">View Results</a>
+        </div>
+    </div>
+</div>

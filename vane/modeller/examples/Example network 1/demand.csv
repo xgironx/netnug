@@ -1,0 +1,11 @@
+#Id,Desc,Type,NpdeA,Nodez,Direction,Traffic  Id
+1,n2<==>n27,Ethernet,n2,n27,0,1
+2,n4<==>n27,Ethernet,n4,n27,0,2
+3,n24<==>n7,Ethernet,n24,n7,0,3
+4,n2<==>n3,Ethernet,n2,n3,0,4
+5,n1<==>n7,Ethernet,n1,n7,0,2
+6,n23<==>n28,Ethernet,n23,n28,0,4
+7,n25<==n27,Ethernet,n25,n27,0,3
+8,n6<==>n25,Ethernet,n25,n6,0,1
+9,n26<==n23,Ethernet,n26,n23,0,2
+10,n25<==>n7,Ethernet,n25,n7,0,4

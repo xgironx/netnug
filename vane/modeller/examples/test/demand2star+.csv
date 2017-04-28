@@ -1,0 +1,27 @@
+#Id,Desc,Type,NodeA,Nodez,Direction,Traffic  Id
+11,tn1==>tn2,Ethernet,tn1,tn2,1,8
+12,tn1==>tn3,Ethernet,tn1,tn3,1,8
+13,tn1==>tn4,Ethernet,tn1,tn4,1,8
+14,tn1==>tn5,Ethernet,tn1,tn5,1,8
+15,tn1==>tn6,Ethernet,tn1,tn6,1,8
+16,tn1==>tn7,Ethernet,tn1,tn7,1,8
+17,tn1==>tn8,Ethernet,tn1,tn8,1,8
+18,tn1==>tn9,Ethernet,tn1,tn9,1,8
+19,tn9==>tn2,Ethernet,tn9,tn2,1,8
+20,tn9==>tn3,Ethernet,tn9,tn3,1,8
+21,tn9==>tn4,Ethernet,tn9,tn4,1,8
+22,tn9==>tn5,Ethernet,tn9,tn5,1,8
+23,tn9==>tn6,Ethernet,tn9,tn6,1,8
+24,tn9==>tn7,Ethernet,tn9,tn7,1,8
+25,tn9==>tn8,Ethernet,tn9,tn8,1,8
+26,tn9==>tn1,Ethernet,tn9,tn1,1,8
+27,tn1==>tn10,Ethernet,tn1,tn10,1,8
+28,tn1==>tn11,Ethernet,tn1,tn11,1,8
+29,tn1==>tn12,Ethernet,tn1,tn12,1,8
+30,tn1==>tn13,Ethernet,tn1,tn13,1,8
+31,tn1==>tn14,Ethernet,tn1,tn14,1,8
+32,tn1==>tn15,Ethernet,tn1,tn15,1,8
+33,tn1==>tn16,Ethernet,tn1,tn16,1,8
+34,tn1==>tn17,Ethernet,tn1,tn17,1,8
+35,tn1==>tn18,Ethernet,tn1,tn18,1,8
+36,tn18==>tn1,Ethernet,tn18,tn1,1,8

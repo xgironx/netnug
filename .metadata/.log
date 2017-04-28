@@ -1,0 +1,974 @@
+!SESSION 2017-04-26 14:38:01.289 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-26 14:39:44.493
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:42:10.323
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:42:10.522
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:42:16.922
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:42:16.939
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:42:18.810
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:42:18.815
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:43:56.537
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:43:56.540
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2017-04-26 14:52:56.191
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2017-04-26 14:52:56.191
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-26 14:52:56.191
+!MESSAGE "Dali Java Persistence Tools - JPA Support" will be ignored because a newer version is already installed. 
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2017-04-26 14:52:56.201
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2017-04-26 14:52:56.201
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-26 14:52:56.201
+!MESSAGE "Dali Java Persistence Tools - JPA Support" will be ignored because a newer version is already installed. 
+!SESSION 2017-04-26 14:53:47.786 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/Users/justingiron/Dropbox/3/x/bah/bench/drew/mason-investment-dev/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-26 14:54:13.362
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:54:34.311
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 14:54:34.355
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 14:56:59.975
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:15:21.476
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:15:21.515
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:15:21.894
+!MESSAGE The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:15:21.916
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-26 15:17:26.187
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-26 15:17:26.196
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 15:19:05.451
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 15:19:49.206
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-04-26 15:20:16.899 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-26 15:20:41.425
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:20:58.690
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:20:58.732
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 15:21:04.456
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 15:23:36.397
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-04-26 15:26:59.387 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-26 15:27:18.900
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:27:45.113
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-26 15:27:45.152
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 15:27:46.360
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-26 16:02:26.623
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-26 16:02:26.634
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-26 16:07:40.142
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-26 16:07:40.143
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-26 16:10:40.184
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-26 16:10:40.184
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.debug.ui 4 0 2017-04-26 16:16:25.766
+!MESSAGE Launch shortcut 'org.eclipse.ant.ui.antShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesContentType to type class org.eclipse.swt.custom.CTabItem
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:127)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:97)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:160)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:55)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:281)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:141)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1501)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1509)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1313)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1243)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1223)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$7(ActionContributionItem.java:1186)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1501)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1505)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5787)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4157)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3699)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2017-04-26 16:16:25.779
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesContentType to type class org.eclipse.swt.custom.CTabItem
+
+!ENTRY org.eclipse.debug.ui 4 0 2017-04-26 16:16:25.783
+!MESSAGE Launch shortcut 'org.eclipse.ant.ui.antShortcutWithDialog' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.eclipse.debug.ui.matchesContentType to type class org.eclipse.swt.custom.CTabItem
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:127)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:97)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:22)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:160)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:75)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:55)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:281)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:141)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1501)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1509)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1313)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1243)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1223)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$7(ActionContributionItem.java:1186)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1501)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1505)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5787)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4157)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3699)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2017-04-26 16:16:25.784
+!MESSAGE No property tester contributes a property org.eclipse.debug.ui.matchesContentType to type class org.eclipse.swt.custom.CTabItem
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-26 16:25:45.461
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-26 16:25:45.462
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.ui 4 0 2017-04-26 16:26:01.020
+!MESSAGE An error occurred while cleaning Tomcat v8.5 Server at localhost work directory.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2017-04-26 16:26:01.020
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.cleanServerWorkDir(TomcatServerBehaviour.java:1031)
+	at org.eclipse.jst.server.tomcat.ui.internal.CleanWorkDirDialog$DeleteWorkDirJob.run(CleanWorkDirDialog.java:343)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.jst.server.tomcat.core 2 0 2017-04-26 16:26:01.021
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-26 16:26:26.622
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-26 16:26:26.626
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 16:31:29.082
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-26 16:35:29.496
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-04-28 08:48:33.851 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 08:48:54.442
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 08:49:15.374
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 08:49:15.425
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 08:58:07.859
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 09:04:18.302
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 09:04:18.320
+!MESSAGE Could not load the Tomcat server configuration at /Servers/Tomcat v8.5 Server at localhost-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 09:06:17.079
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 09:06:37.377
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 09:12:09.827
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-04-28 09:12:30.589 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 09:12:47.775
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 09:13:12.931
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 09:13:12.983
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 13:06:27.878
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-04-28 13:12:18.570 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 13:12:33.038
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:12:57.100
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:12:57.145
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 13:13:35.024
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:14:24.901
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:14:24.912
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-28 13:15:00.541
+!MESSAGE Cannot publish to the server because it is missing its runtime environment.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-28 13:15:32.974
+!MESSAGE Cannot publish to the server because it is missing its runtime environment.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 13:16:35.661
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-04-28 13:17:21.762 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 13:17:31.966
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:17:52.561
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:17:52.600
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:21:39.376
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:21:39.404
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 13:30:14.908
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+!SESSION 2017-04-28 13:36:59.183 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 13:37:09.330
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:37:31.066
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 13:37:31.125
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 13:38:53.563
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-28 13:51:29.281
+!MESSAGE Cannot publish to the server because it is missing its runtime environment.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-04-28 13:57:38.288
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2017-04-28 13:57:38.288
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.288
+!MESSAGE "Eclipse Java Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.288
+!MESSAGE "Eclipse Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.288
+!MESSAGE "CXF Web Services" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-04-28 13:57:38.288
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Software being installed: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Software currently installed: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.288
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201512010225 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201512010225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201601291607 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201601291607)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201606030549 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201606030549)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201605311817 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201605311817)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.288
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201604300029 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201604300029)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201603232216 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201603232216)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.1.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.289
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE From: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.group [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.289
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE From: Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.group 3.8.1.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.289
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE From: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.289
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.2.v201702270442]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-04-28 13:57:38.297
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2017-04-28 13:57:38.297
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.297
+!MESSAGE "Eclipse Java Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.297
+!MESSAGE "Eclipse Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.297
+!MESSAGE "CXF Web Services" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-04-28 13:57:38.297
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Software being installed: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Software currently installed: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.297
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201512010225 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201512010225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201601291607 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201601291607)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201606030549 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201606030549)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201605311817 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201605311817)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201604300029 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201604300029)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201603232216 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201603232216)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.1.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.297
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE From: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.group [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.297
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE From: Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.group 3.8.1.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.297
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE From: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.297
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.2.v201702270442]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-04-28 13:57:38.317
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2017-04-28 13:57:38.318
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.318
+!MESSAGE "Eclipse Java Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.318
+!MESSAGE "Eclipse Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.318
+!MESSAGE "CXF Web Services" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-04-28 13:57:38.318
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Software being installed: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Software currently installed: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.318
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201512010225 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201512010225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201601291607 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201601291607)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201606030549 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201606030549)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201605311817 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201605311817)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201604300029 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201604300029)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201603232216 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201603232216)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.1.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.318
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE From: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.group [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.318
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE From: Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.group 3.8.1.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.318
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE From: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.318
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.2.v201702270442]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2017-04-28 13:57:38.318
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2017-04-28 13:57:38.319
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.319
+!MESSAGE "Eclipse Java Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.319
+!MESSAGE "Eclipse Web Developer Tools" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2017-04-28 13:57:38.319
+!MESSAGE "CXF Web Services" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2017-04-28 13:57:38.319
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Software being installed: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Software currently installed: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.319
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201512010225 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201512010225)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201601291607 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201601291607)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201606030549 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201606030549)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201605311817 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201605311817)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201604300029 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201604300029)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.0.v201603232216 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.0.v201603232216)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.jar 3.8.1.v201609072018)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.319
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE From: Eclipse Web Developer Tools SDK 3.8.0.v201609072018 (org.eclipse.wst.web_sdk.feature.feature.group 3.8.0.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.group [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.319
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE From: Eclipse Web Developer Tools 3.8.1.v201609072018 (org.eclipse.wst.web_ui.feature.feature.group 3.8.1.v201609072018)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.1.v201609072018]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2017-04-28 13:57:38.319
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE From: Eclipse Web Developer Tools 3.8.2.v201702270442 (org.eclipse.wst.web_ui.feature.feature.group 3.8.2.v201702270442)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2017-04-28 13:57:38.319
+!MESSAGE To: org.eclipse.wst.web_ui.feature.feature.jar [3.8.2.v201702270442]
+!SESSION 2017-04-28 14:01:36.148 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/Users/justingiron/Dropbox/3/x/bah/bench/drew/mason-investment-dev/ -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 14:02:00.758
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 14:02:23.391
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 14:02:23.510
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 14:03:14.789
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 14:03:14.791
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!SESSION 2017-04-28 14:39:21.515 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 14:39:32.273
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 14:39:55.202
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-04-28 14:39:55.333
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 15:01:23.556
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-28 15:03:21.049
+!MESSAGE Cannot publish to the server because it is missing its runtime environment.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-28 15:03:34.313
+!MESSAGE Cannot publish to the server because it is missing its runtime environment.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-04-28 15:04:05.787
+!MESSAGE Cannot publish to the server because it is missing its runtime environment.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:05:26.090
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:05:26.102
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:11:25.399
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:11:25.400
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:14:55.537
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:14:55.537
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:14:59.435
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:14:59.436
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:15:36.965
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:15:36.965
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:16:28.744
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:16:28.745
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:17:11.810
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:17:11.810
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:17:34.688
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:17:34.688
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:17:52.869
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:17:52.869
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-04-28 15:18:04.617
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat85Configuration.load(Tomcat85Configuration.java:313)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:130)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:80)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:233)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3172)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 2 0 2017-04-28 15:18:04.617
+!MESSAGE Could not load the Tomcat server configuration at /Servers/tomcat85-config. The configuration may be corrupt or incomplete.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2017-04-28 15:20:06.405
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "P/Servers".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2017-04-28 15:20:06.410
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "P/Servers".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2017-04-28 15:20:06.417
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "P/Servers".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+!SESSION 2017-04-28 15:24:14.173 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/justingiron/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-04-28 15:24:28.772
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2017-04-28 15:24:39.020
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.ui 4 0 2017-04-28 15:24:39.020
+!MESSAGE Could not open editor because tomcat85.server is not a valid server. Use Open With to open this file with a different editor.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2017-04-28 15:25:21.592
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4

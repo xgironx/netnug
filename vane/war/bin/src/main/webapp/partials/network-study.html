@@ -1,0 +1,299 @@
+<style type="text/css">
+
+.custom-card {
+  padding: 5px 0px;
+}
+
+.custom-card-block {
+  padding: 5px 0px 0px 0px;
+}
+
+.text-input-field-style-tweaks {
+  margin-bottom: 5px;
+}
+
+.top-margin {
+  margin-top: 0px;
+}
+
+.inline-block-container {
+  display: inline-block;
+  width: 100%;
+}
+
+</style>
+
+<div layout="row" layout-fill style="min-height: 600px">
+  <div flex="50" id="main-view">
+  </div>
+
+  <div ng-controller="NetworkStudyController" flex="50">
+
+    <div role="tablist" aria-multiselectable="true">
+      <div class="custom-card">
+        <div class="accordion card-header" role="tab" ng-class="{active: demandStudyAccordionContentVisible}">
+          <h3>
+            <a href ng-click="nodeStudyAccordionContentVisible=false;demandStudyAccordionContentVisible=!demandStudyAccordionContentVisible">Demand Study</a>
+          </h3>
+        </div>
+        <div class="accordion-content" role="tabpanel" ng-show="demandStudyAccordionContentVisible">
+
+          <div class="custom-card-block">
+            <div class="accordion card-header" role="tab" ng-class="{active: demandStudyAccordionContentVisible && demandStudy.studyType.accordionContentVisible}">
+              <h5>
+                <a href ng-click="toggleAccordion('demandStudyTypeSelection')">Select Demand Study Type</a>
+              </h5>
+            </div>
+            <div class="accordion-content" layout="column" role="tabpanel" ng-show="demandStudy.studyType.accordionContentVisible">
+              <div class="form-group form-group-style-tweaks" flex>
+
+                <md-radio-group ng-model="demandStudy.studyType.selected" class="md-primary">
+                  <div layout="row" layout-wrap flex>
+                    <div flex="25" ng-repeat="studyType in demandStudy.studyType.types">
+                      <md-radio-button ng-value="studyType.label" ng-disabled="studyType.isDisabled">
+                        {{ studyType.label }}
+                      </md-radio-button>
+                    </div>
+                  </div>
+                </md-radio-group>
+
+              </div>
+
+              <div layout="row" layout-align="end center">
+                <button ng-disabled="demandStudy.studyType.selected == null" class="btn btn-primary btn-sm"
+                  ng-click="toggleAccordion('demandStudyTypeSelection');toggleAccordion('demandStudyDemandSelection');">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-card-block">
+            <div class="accordion card-header" role="tab" ng-class="{active: demandStudyAccordionContentVisible && demandStudy.demandSelection.accordionContentVisible}">
+              <h5>
+                <a href ng-click="toggleAccordion('demandStudyDemandSelection')">
+                  Select Demands <span ng-if="demandStudy.demandSelection.selectedDemands != null && demandStudy.demandSelection.selectedDemands.length > 0">
+                  ({{demandStudy.demandSelection.selectedDemands.length}} selected)</span>
+                </a>
+              </h5>
+            </div>
+            <div class="accordion-content" role="tabpanel" ng-show="demandStudy.demandSelection.accordionContentVisible">
+              <div class="form-group form-group-style-tweaks">
+                  <label class="label-style-no-bottom-margin" for="availableDemands">
+                      {{demandStudy.demandSelection.availableDemands.length}} Available {{'Demand' | pluralize:demandStudy.demandSelection.availableDemands.length}}:
+                  </label>
+                  <select multiple class="form-control multi-select-style-tweaks" data-ng-attr-size="{{demandsListSize}}"
+                   name="availableDemands" id="availableDemands"
+                   ng-options="demand.getPrettifiedName() for demand in demandStudy.demandSelection.availableDemands"
+                   ng-change="demandSelectionChange()" ng-model="demandStudy.demandSelection.selectedDemands"></select>
+
+                  <div layout="row" layout-align="space-between center">
+                    <button class="btn btn-primary btn-sm"
+                      ng-click="toggleAccordion('demandStudyDemandSelection');toggleAccordion('demandStudyTypeSelection');">
+                      Prev
+                    </button>
+                    <button ng-disabled="demandStudy.demandSelection.selectedDemands == null || demandStudy.demandSelection.selectedDemands.length == 0"
+                      class="btn btn-primary btn-sm"
+                      ng-click="toggleAccordion('demandStudyDemandSelection');toggleAccordion('demandStudyParameters');">
+                      Next
+                    </button>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="custom-card-block">
+            <div class="accordion card-header" role="tab" ng-class="{active: demandStudyAccordionContentVisible && demandStudy.parameters.accordionContentVisible}">
+              <h5>
+                <a href ng-click="toggleAccordion('demandStudyParameters')">
+                  Study Parameters <span ng-if="demandStudy.studyType.selected">
+                  ({{demandStudy.studyType.selected}})</span>
+                </a>
+              </h5>
+            </div>
+            <div class="accordion-content" role="tabpanel" ng-show="demandStudy.parameters.accordionContentVisible">
+              <div class="form-group form-group-style-tweaks">
+
+                <div ng-if="demandStudy.studyType.selected == 'Demand Failure'">
+                  For each selected demand, iteratively increase demand traffic by:
+                  <md-radio-group ng-model="demandFailureStudy.trafficParameters.selected" class="md-primary">
+                    <div layout="row" layout-wrap flex>
+                      <div flex="50" ng-repeat="option in demandFailureStudy.trafficParameters.available">
+                        <md-radio-button ng-value="{key: option.key, value: option.value}" ng-disabled="studyType.isDisabled">
+                          {{ option.label }}
+                        </md-radio-button>
+                      </div>
+                    </div>
+                  </md-radio-group>
+
+                  <div ng-if="demandFailureStudy.trafficParameters.selected">
+                    <input class="form-control text-input-field-style-tweaks" type="text"
+                    ng-model="demandFailureStudy.trafficParameters.selected.value"
+                    placeholder="{{demandFailureStudy.trafficParameters.selected.placeholder}}" />
+                  </div>
+                </div>
+              </div>
+
+              <div layout="row" layout-align="space-between center">
+                <button class="btn btn-primary btn-sm"
+                  ng-click="toggleAccordion('demandStudyParameters');toggleAccordion('demandStudyDemandSelection');">Prev
+                </button>
+                <button ng-disabled="demandFailureStudy.trafficParameters.selected == null || !isNumeric(demandFailureStudy.trafficParameters.selected.value)"
+                  class="btn btn-primary btn-sm" ng-click="toggleAccordion('demandStudyParameters');toggleAccordion('demandStudyTerminationConditions');">Next
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="custom-card-block">
+            <div class="accordion card-header" role="tab" ng-class="{active: demandStudyAccordionContentVisible && demandStudy.terminationConditions.accordionContentVisible}">
+              <h5>
+                <a href ng-click="toggleAccordion('demandStudyTerminationConditions')">Study Termination Conditions</a>
+              </h5>
+            </div>
+            <div class="accordion-content" role="tabpanel" ng-show="demandStudy.terminationConditions.accordionContentVisible">
+
+              Which conditions will apply to terminate this {{demandStudy.studyType.selected}} study?
+
+              <div class="form-group form-group-style-tweaks">
+
+                <div ng-repeat="option in demandFailureStudy.terminationConditions.available">
+                  <!--
+                  <md-checkbox ng-checked="exists(option.key, demandFailureStudy.outputOptions.selected)"
+                               ng-click="toggleCheckbox(option, demandFailureStudy.terminationConditions.selected)"
+                               ng-disabled="option.isDisabled">
+                  -->
+                  <md-checkbox ng-checked="option.isChecked"
+                               ng-click="toggleCheckbox(option, demandFailureStudy.terminationConditions.selected)"
+                               ng-disabled="option.isDisabled">
+                    {{ option.label }}
+                  </md-checkbox>
+
+                  <!-- <div ng-if="exists(option.key, demandFailureStudy.terminationConditions.selected)"> -->
+                  <div ng-if="option.isChecked">
+                    <!-- <label class="label-style-no-bottom-margin" for={{option.key}}>{{option.label}}:</label> -->
+                    <input class="form-control text-input-field-style-tweaks" type="text" name={{option.key}} id={{option.key}}
+                     ng-model="option.value" placeholder={{option.placeholder}} />
+                  </div>
+
+                </div>
+              </div>
+
+              <div layout="row" layout-align="space-between center">
+                <button class="btn btn-primary btn-sm"
+                  ng-click="toggleAccordion('demandStudyTerminationConditions');toggleAccordion('demandStudyParameters');">Prev
+                </button>
+                <button ng-disabled="demandFailureStudy.terminationConditions.selected.length == 0 ||
+                                     !isValidInput(demandFailureStudy.terminationConditions.selected, isNumeric)"
+                  class="btn btn-primary btn-sm"
+                  ng-click="toggleAccordion('demandStudyTerminationConditions');toggleAccordion('demandStudyOutputOptions');">Next
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="custom-card-block">
+            <div class="accordion card-header" role="tab" ng-class="{active: demandStudyAccordionContentVisible && demandStudy.outputOptions.accordionContentVisible}">
+              <h5>
+                <a href ng-click="toggleAccordion('demandStudyOutputOptions')">Output Options</a>
+              </h5>
+            </div>
+            <div class="accordion-content" role="tabpanel" ng-show="demandStudy.outputOptions.accordionContentVisible">
+
+              <div class="form-group form-group-style-tweaks">
+                For each selected demand, output the following:
+                <fieldset class="standard">
+                  <div layout="row" layout-wrap flex>
+                    <div flex="50" ng-repeat="option in demandFailureStudy.outputOptions.available">
+                      <md-checkbox ng-checked="exists(option.value, demandFailureStudy.outputOptions.selected)"
+                                   ng-click="toggleCheckbox(option.value, demandFailureStudy.outputOptions.selected)"
+                                   ng-disabled="option.isDisabled">
+                        {{ option.label }}
+                      </md-checkbox>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form-group form-group-style-tweaks">
+                File format:
+                <fieldset class="standard">
+                  <div layout="row" layout-wrap flex>
+                    <div flex="50" ng-repeat="option in outputFormatOptions.available">
+                      <md-checkbox ng-click="toggleCheckbox(option.value, outputFormatOptions.selected)"
+                                   ng-disabled="option.isDisabled">
+                        {{ option.label }}
+                      </md-checkbox>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div layout="row" layout-align="space-between center">
+                <button class="btn btn-primary btn-sm"
+                  ng-click="toggleAccordion('demandStudyOutputOptions');toggleAccordion('demandStudyTerminationConditions');">Prev
+                </button>
+                <button ng-disabled="outputFormatOptions.selected.length == 0" class="btn btn-primary btn-sm"
+                  ng-click="toggleAccordion('demandStudyOutputOptions');runStudy('demand');">Run {{demandStudy.studyType.selected}} Study
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="custom-card">
+        <div class="accordion card-header" role="tab" ng-class="{active: nodeStudyAccordionContentVisible}">
+          <h3>
+            <a href ng-click="demandStudyAccordionContentVisible=false;nodeStudyAccordionContentVisible=!nodeStudyAccordionContentVisible;">Node Study</a>
+          </h3>
+        </div>
+        <div class="accordion-content" role="tabpanel" ng-show="nodeStudyAccordionContentVisible">
+          <div class="custom-card-block">
+            Node Failure Content...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="inline-block-container">
+  <h3 class="accordion" ng-class="{active: accordion == 1}">
+    <a href ng-click="accordion = 1">Demand Study</a>
+  </h3>
+  <div class="accordion-content" ng-show="accordion == 1">
+  <ul>
+    <li>1. Choose Demands</li>
+    <li>2. Increase Bandwidth</li>
+    <li>3. End condition</li>
+      <ul>
+      <li> (for each demand, Utilization > y or any demand utilization > y</li>
+          <li>3. Steps (0 steps => until failure)</li>
+        </ul>
+    <li>5. Output</li>
+      <ul>
+        <li>Directory name</li>
+        <li>All</li>
+        <li>@End condition</li>
+      </ul>
+    </ul>
+  </div>
+  <h3 class="accordion" ng-class="{active: accordion == 2}">
+    <a href ng-click="accordion = 2">Node Study</a>
+  </h3>
+  <div class="accordion-content" ng-show="accordion == 2">
+  Node Failure content...
+  </div>
+  <h3 class="accordion" ng-class="{active: accordion == 3}">
+    <a href ng-click="accordion = 3">Bandwidth Study</a>
+  </h3>
+  <div class="accordion-content" ng-show="accordion == 3">
+  Minimum bandwidth content...
+  </div>
+</div> -->

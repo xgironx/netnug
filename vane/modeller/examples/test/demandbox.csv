@@ -1,0 +1,3 @@
+#Id,Desc,Type,NodeA,Nodez,Direction,Traffic  Id
+11,tn1==>tn6,Ethernet,tn1,tn6,1,7
+12,tn6==>tn1,Ethernet,tn6,tn1,1,7

@@ -1,0 +1,10 @@
+#Node,Y,X,Desc,Subnet,Tz
+tn1,100,20,test,4,-7
+tn2,110,20,test,4,-6
+tn3,120,20,test,4,-5
+tn4,100,10,test,4,-7
+tn5,110,10,test,4,-6
+tn6,120,10,test,4,-5
+tn7,100,1,test,4,-7
+tn8,110,1,test,4,-6
+tn9,120,1,test,4,-5

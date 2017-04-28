@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="stressTestApp">
+<head>
+	<script src="jslib/angular.js"></script>
+	<script src="jslib/angular-route.js"></script>
+	<script src="jslib/leaflet.js"></script>
+	
+	<script src="js/leaflet/angular-leaflet-wrapper.js"></script>
+	<script src="js/leaflet/leaflet.node.js"></script>
+	<script src="js/leaflet/leaflet.icons.js"></script>
+	<script src="js/leaflet/leaflet.link.js"></script>
+	
+	<script src="jslib/angular-upload.js"></script>
+	<script src="js/structures/vane.structures.js"></script>
+	
+	<script src="jslib/tinycolor.js"></script>
+	<script src="js/utils/angular-tinycolor-wrapper.js"></script>
+	<script src="js/utils/legend.js"></script>
+	
+	<script src="js/load/vane.load.js"></script>
+	<script src="js/load/vane.load.tiles.js"></script>
+	
+	<link rel="stylesheet" href="css/leaflet.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	
+	<script>
+	angular.module("stressTestApp", ["leaflet", "vane.load", "legend"])
+	.controller("MainController", function($scope, coloring){
+		console.log(coloring.options())
+		coloring.choose("ICITE")
+		
+		$scope.switchTo = function(str){
+			coloring.choose(str)
+		}
+
+	})
+	
+	</script>
+	<style>
+	html, body{
+		height: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	
+	body{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#options{
+		flex-grow: 0;
+		padding: 1em;
+	}
+	
+	#map{
+		flex-grow: 1;
+	}
+	</style>
+</head>
+<body ng-controller="MainController" style="display: flex">
+	<div id="options">
+		<input ng-model="count"/>
+		<button ng-click="switchTo('ICITE')">ICITE</button>
+		<button ng-click="switchTo('Sliding')">Sliding</button>
+		<vane-legend style="height: 10em; width: 10em;"></vane-legend>
+	</div>
+	<div id="map"></div>
+</body>
+</html>

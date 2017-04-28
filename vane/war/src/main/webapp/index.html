@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html ng-app="vane">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANE: Visual and Animated Network Environment</title>
+
+    <!-- Primary stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/angular-material.css"/>
+    <link rel="stylesheet" href="css/xeditable.css"/>
+    <link rel="stylesheet" href="css/nv.d3.min.css"/>
+    <link rel="stylesheet" href="css/angular-nvd3.css"/>
+    <link rel="stylesheet" href="css/rzslider.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/color-picker.css"/>
+
+    <!-- Core Angular libraries -->
+    <script src="jslib/angular.js"></script>
+    <script src="jslib/angular-animate.js"></script>
+    <script src="jslib/angular-aria.js"></script>
+    <script src="jslib/angular-messages.js"></script>
+    <script src="jslib/angular-material.js"></script>
+    <script src="jslib/angular-route.js"></script>
+    <!-- <script src="jslib/angular-touch.js"></script> -->
+    <!-- <script src="jslib/angular-strap.js"></script> -->
+    <!-- <script src="jslib/angular-strap.tpl.js"></script> -->
+    <!-- <script src="jslib/ui-bootstrap-tpls-2.5.0.js"></script> -->
+
+    <!-- Library dependencies -->
+    <script src="jslib/jquery-3.1.1.js"></script>
+    <script src="jslib/tether.js"></script> <!-- Include before bootstrap.js -->
+    <script src="jslib/bootstrap.js"></script>
+    <script src="jslib/xeditable.js"></script> <!-- Must include **after** core library dependencies (bootstrap, jquery-ui) -->
+
+    <script src="jslib/propeller.min.js"></script>
+    <script src="jslib/color-picker.min.js"></script>
+
+    <script src="jslib/tinycolor.js"></script>
+    <script src="js/utils/angular-tinycolor-wrapper.js"></script>
+    <script src="jslib/angular-upload.js"></script>
+    <script src="jslib/rzslider.js"></script>
+
+    <script src="jslib/Chart.js"></script>
+    <script src="jslib/angular-chart.js"></script>
+
+    <script src="jslib/d3.v3.min.js"></script>
+    <script src="jslib/nv.d3.js"></script>
+    <script src="jslib/angular-nvd3.js"></script>
+
+    <!-- Leaflet and related resources -->
+    <script src="jslib/leaflet.js"></script>
+    <script src="js/leaflet/angular-leaflet-wrapper.js"></script>
+
+    <script src="js/leaflet/leaflet.icons.js"></script>
+    <script src="js/leaflet/leaflet.polylineLink.js"></script>
+    <script src="js/leaflet/leaflet.node.js"></script>
+    <script src="js/leaflet/leaflet.link.js"></script>
+    <script src="js/leaflet/leaflet.animatedTraffic.js"></script>
+    <script src="js/leaflet/leaflet.linkTraffic.js"></script>
+    <script src="js/leaflet/leaflet.demand.js"></script>
+    <script src="js/leaflet/leaflet.route.js"></script>
+    <script src="js/leaflet/leaflet.highlighterCircle.js"></script>
+    <script src="js/leaflet/leaflet.highlighterPolyline.js"></script>
+    <!-- <script src="js/leaflet/leaflet.selectionCircle.js"></script> -->
+    <!-- <script src="js/leaflet/leaflet.selectionPolyline.js"></script> -->
+
+    <!-- Utilities -->
+    <script src="js/utils/vane.coloring.js"></script>
+    <script src="js/utils/vane.filters.js"></script>
+    <script src="js/utils/vane.misc.js"></script>
+    <script src="js/utils/vane.highlighterService.js"></script>
+    <script src="js/utils/vane.selectionService.js"></script>
+    <script src="js/utils/vane.services.mapService.js"></script>
+
+    <!-- Data loading/management -->
+    <script src="js/load/vane.load.js"></script>
+    <script src="js/load/vane.load.networkService.js"></script>
+    <script src="js/load/vane.load.newNetworkService.js"></script>
+    <script src="js/load/vane.load.tiles.js"></script>
+
+    <!-- Directives -->
+    <script src="js/elements/vane.elements.js"></script>
+    <script src="js/elements/vane.elements.demandsChart.js"></script>
+    <script src="js/elements/vane.elements.legend.js"></script>
+    <script src="js/elements/vane.elements.sidebar.js"></script>
+    <script src="js/elements/vane.elements.sidebar.infoTab.js"></script>
+    <script src="js/elements/vane.elements.sidebar.editTab.js"></script>
+    <script src="js/elements/vane.elements.sidebar.optionsTab.js"></script>
+
+    <!-- Data structures -->
+    <script src="js/structures/vane.structures.js"></script>
+    <script src="js/structures/vane.structures.subnet.js"></script>
+    <script src="js/structures/vane.structures.link.js"></script>
+    <script src="js/structures/vane.structures.node.js"></script>
+    <script src="js/structures/vane.structures.demand.js"></script>
+    <script src="js/structures/vane.structures.route.js"></script>
+
+    <!-- App controllers -->
+    <script src="js/pages/vane.pages.js"></script>
+    <script src="js/pages/vane.pages.demands.js"></script>
+    <script src="js/pages/vane.pages.map.js"></script>
+    <script src="js/pages/vane.pages.projects.js"></script>
+    <script src="js/pages/vane.pages.new.js"></script>
+    <script src="js/pages/vane.pages.network-study.js"></script>
+    <!-- <script src="js/pages/vane.pages.queue.js"></script> -->
+    <script src="js/pages/vane.pages.review.js"></script>
+
+    <!-- Master app -->
+    <script src="js/vane.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="MenuController">
+      <nav id="custom-navbar" class="navbar fixed-top navbar-inverse bg-inverse" >
+        <div class="navbar-container container-fluid" >
+          <div class="navbar-controls navbar-projects-btn-group btn-group btn-group">
+            <a tooltip data-toggle="tooltip" data-placement="bottom" title="View projects"
+             id="projects-btn" class="navbar-projects-btn-group-btn btn btn-primary" role="button" href="#!/projects"
+             ng-class="{active: $route.current.activeView === 'projects'}">Projects</a>
+            <a tooltip data-toggle="tooltip" data-placement="bottom" title="Add new project"
+             id="new-project-btn" class="navbar-projects-btn-group-btn btn btn-primary btn-lg" href="#!/new" role="button">
+             <i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="navbar-controls navbar-map-controls" ng-if="$route.current.activeView != 'projects'">
+
+            <!-- Save Network Button -->
+            <button tooltip data-toggle="tooltip" data-html="true" data-placement="bottom" title="Save network state"
+            type="button" id="save-btn" class="navbar-map-controls-btn btn btn-primary btn-lg"
+            ng-if="$route.current.activeView == 'map'" ng-click="save()">
+                <i class="fa fa-floppy-o fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+
+            <!-- Analyze Network Button. Static/visible when not analyzing. -->
+            <button ng-if="!analyzing" tooltip data-toggle="tooltip" data-placement="bottom" title="Analyze network"
+             type="button" class="navbar-map-controls-btn btn btn-primary btn-lg"
+             ng-if="$route.current.activeView == 'map'" ng-click="analyze()">
+                <i class="fa fa-refresh fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+
+            <!-- Analyze Network Button. Rotates/visible when analyzing. -->
+            <button ng-if="analyzing"
+             type="button" class="navbar-map-controls-btn btn btn-danger btn-lg"
+             ng-if="$route.current.activeView == 'map'">
+                <i class="fa fa-refresh fa-spin fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+
+            <!-- Network Study Wizard Button. -->
+            <a tooltip data-toggle="tooltip" data-html="true" data-placement="bottom" title="Network study wizard"
+             id="study-btn" class="navbar-map-controls-btn btn btn-primary btn-lg" role="button"
+             ng-if="$route.current.activeView != 'study'" ng-href="#!/network-study/{{mostRecentMap}}">
+                <i class="fa fa-magic fa-lg fa-fw" aria-hidden="true"></i>
+            </a>
+
+            <!-- View/Edit Demands Button. Visible in 'map' view. -->
+            <a tooltip data-toggle="tooltip" data-html="true" data-placement="bottom" title="View/Edit network demands"
+             id="view-btn" class="navbar-map-controls-btn btn btn-primary btn-lg" role="button"
+             ng-if="$route.current.activeView != 'demands'" ng-href="#!/demands/{{mostRecentMap}}">
+                <i class="fa fa-bar-chart fa-lg fa-fw" aria-hidden="true"></i>
+            </a>
+            <!-- View Map Button. Visible in 'demands' view. -->
+            <a tooltip data-toggle="tooltip" data-placement="bottom" title="View network map"
+             id="view-btn" class="navbar-map-controls-btn btn btn-primary btn-lg" role="button"
+             ng-if="$route.current.activeView != 'map'" ng-href="#!/map/{{mostRecentMap}}">
+                <i class="fa fa-map-o fa-lg fa-fw" aria-hidden="true"></i>
+            </a>
+
+            <!-- Undo/Redo Button Group
+            <div class="btn-group btn-group" ng-if="$route.current.activeView == 'map'">
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="Undo"
+               type="button" class="navbar-map-controls-btn btn btn-secondary" ng-click="undo()">
+               <i class="fa fa-undo fa-lg fa-fw" aria-hidden="true"></i>
+              </button>
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="Redo"
+               type="button" class="navbar-map-controls-btn btn btn-secondary" ng-click="redo()">
+               <i class="fa fa-repeat fa-lg fa-fw" aria-hidden="true"></i>
+              </button>
+            </div>
+            -->
+
+            <!-- Show/Hide Toggles Dropdown -->
+            <div ng-if="$route.current.activeView == 'map'" class="btn-group" ng-class='{open: visibilityToggleDropdownOpen}'>
+              <button tooltip data-toggle="dropdown tooltip" data-placement="bottom" title="Show/hide..."
+               type="button" class="navbar-map-controls-btn-group btn btn-secondary btn-lg dropdown-toggle"
+               aria-haspopup="true" aria-expanded="false"
+               ng-click='visibilityToggleDropdownOpen=!visibilityToggleDropdownOpen;'>
+                  <i class="fa fa-eye-slash fa-lg fa-fw" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-custom-z-index">
+                <h6 class="dropdown-header">Nodes</h6>
+                <a class="dropdown-item" ng-click="toggleVisibility('allNodes');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleNodes.all"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> All Nodes</span>
+                  <span ng-if="!visibleNodes.all"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">All Nodes</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('enabledNodes');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleNodes.enabled"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Enabled Nodes</span>
+                  <span ng-if="!visibleNodes.enabled"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Enabled Nodes</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('disabledNodes');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleNodes.disabled"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Disabled Nodes</span>
+                  <span ng-if="!visibleNodes.disabled"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Disabled Nodes</span></span>
+                </a>
+                <h6 class="dropdown-header">Links</h6>
+                <a class="dropdown-item" ng-click="toggleVisibility('allLinks');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleLinks.all"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> All Links</span>
+                  <span ng-if="!visibleLinks.all"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">All Links</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('enabledLinks');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleLinks.enabled"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Enabled Links</span>
+                  <span ng-if="!visibleLinks.enabled"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Enabled Links</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('disabledLinks');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleLinks.disabled"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Disabled Links</span>
+                  <span ng-if="!visibleLinks.disabled"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Disabled Links</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('usedLinks');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleLinks.used"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Used Links</span>
+                  <span ng-if="!visibleLinks.used"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Used Links</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('unusedLinks');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleLinks.unused"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Unused Links</span>
+                  <span ng-if="!visibleLinks.unused"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Unused Links</span></span>
+                </a>
+                <h6 class="dropdown-header">Demands</h6>
+                <a class="dropdown-item" ng-click="toggleVisibility('allDemands');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleDemands.all"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> All Demands</span>
+                  <span ng-if="!visibleDemands.all"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">All Demands</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('satisfiedDemands');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleDemands.satisfied"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Satisfied Demands</span>
+                  <span ng-if="!visibleDemands.satisfied"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Satisfied Demands</span></span>
+                </a>
+                <a class="dropdown-item" ng-click="toggleVisibility('unsatisfiedDemands');visibilityToggleDropdownOpen=false">
+                  <span ng-if="visibleDemands.unsatisfied"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Unsatisfied Demands</span>
+                  <span ng-if="!visibleDemands.unsatisfied"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Unsatisfied Demands</span></span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" ng-click="toggleVisibility('legend');visibilityToggleDropdownOpen=false">
+                  <span ng-if="legendVisible"><i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Map Legend</span>
+                  <span ng-if="!legendVisible"><i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> <span class="text-muted">Map Legend</span></span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Selection Dropdown -->
+            <div ng-if="$route.current.activeView == 'map'" class="btn-group btn-group">
+              <div class="btn-group" ng-class='{open: selectDropdownOpen}'>
+                <button tooltip data-toggle="dropdown tooltip" data-placement="bottom" title="Select network components"
+                 type="button" class="navbar-map-controls-btn navbar-map-controls-btn-font btn btn-secondary btn-lg dropdown-toggle"
+                 aria-haspopup="true" aria-expanded="false"
+                 ng-click='selectDropdownOpen=!selectDropdownOpen'>
+                 <i class="fa fa-hand-pointer-o fa-lg fa-fw" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-custom-z-index">
+                  <a class="dropdown-item" ng-click="selectAll();selectDropdownOpen=false">All</a>
+                  <a class="dropdown-item" ng-click="selectType('Node');selectDropdownOpen=false">Nodes</a>
+                  <a class="dropdown-item" ng-click="selectType('Link');selectDropdownOpen=false">Links</a>
+                  <a class="dropdown-item" ng-click="selectState('enabled');selectDropdownOpen=false">Enabled</a>
+                  <a class="dropdown-item" ng-click="selectState('disabled');selectDropdownOpen=false">Disabled</a>
+                </div>
+              </div>
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="Clear selection"
+               class="navbar-map-controls-btn navbar-map-controls-btn-font btn btn-secondary"
+               ng-if="hasSelection" ng-click="deselectAll()">Deselect</button>
+            </div>
+
+            <!-- Enable selection button. Visible when selection is disabled. -->
+            <button tooltip data-toggle="tooltip" data-placement="bottom" title="Enable selection"
+             type="button" id="enable-btn" ng-if="hasSelection && allDisabled"
+             class="navbar-map-controls-btn navbar-map-controls-btn-font btn btn-danger" ng-click="enable()">
+             <!-- Enable -->
+             <i class="fa fa-toggle-off fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+
+            <!-- Disable selection button. Visible when selection is enabled. -->
+            <button tooltip data-toggle="tooltip" data-placement="bottom" title="Disable selection"
+             type="button" id="disable-btn" ng-if="hasSelection && allEnabled"
+             class="navbar-map-controls-btn navbar-map-controls-btn-font btn btn-success" ng-click="disable()">
+             <!-- Disable -->
+             <i class="fa fa-toggle-on fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+
+            <!-- Enable/Disable selection button group. Visible when multi-selection contains both enabled and disabled objects. -->
+            <div class="btn-group btn-group" ng-if="multiSelection && !allEnabled && !allDisabled">
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="Enable selection" type="button"
+              id="enable-btn" class="navbar-map-controls-btn navbar-map-controls-btn-font btn btn-success" ng-click="enable()">
+               <!-- Enable -->
+               <i class="fa fa-toggle-on fa-lg fa-fw" aria-hidden="true"></i>
+              </button>
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="Disable selection" type="button"
+               id="disable-btn" class="navbar-map-controls-btn navbar-map-controls-btn-font btn btn-danger" ng-click="disable()">
+               <!-- Disable -->
+               <i class="fa fa-toggle-off fa-lg fa-fw" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <!-- Export Dropdown -->
+            <div ng-if="$route.current.activeView == 'map'" class="btn-group" ng-class='{open: exportDropdownOpen}'>
+              <button tooltip data-toggle="dropdown tooltip" data-placement="bottom" title="Export analysis report"
+               type="button" class="navbar-map-controls-btn btn btn-secondary dropdown-toggle btn-lg"
+               aria-haspopup="true" aria-expanded="false"
+               ng-click='exportDropdownOpen=!exportDropdownOpen;'>
+                  <i class="fa fa-share fa-lg fa-fw" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" ng-click="generateReport('csv');exportDropdownOpen=false"><i class="fa fa-file-text-o" aria-hidden="true"></i> CSV</a>
+                <a class="dropdown-item" ng-click="generateReport('json');exportDropdownOpen=false"><i class="fa fa-file-text-o" aria-hidden="true"></i> JSON</a>
+                <a class="dropdown-item disabled" ng-click="generateReport('xlsx');exportDropdownOpen=false"><i class="fa fa-file-excel-o" aria-hidden="true"></i><span class="text-muted"> Excel</span></a>
+                <a class="dropdown-item disabled" ng-click="generateReport('pdf');exportDropdownOpen=false"><i class="fa fa-file-pdf-o" aria-hidden="true"></i><span class="text-muted"> PDF</span></a>
+              </div>
+            </div>
+
+            <!--
+            <button ng-if="notifications.success" tooltip data-toggle="tooltip" data-placement="bottom" title="Show notifications"
+             type="button" class="navbar-map-controls-btn btn btn-success btn-lg" ng-click="showNotifications()">
+                <i class="fa fa-smile-o fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+
+            <button ng-if="notifications.warning" tooltip data-toggle="tooltip" data-placement="bottom" title="Show notifications"
+             type="button" class="navbar-map-controls-btn btn btn-warning btn-lg" ng-click="showNotifications()">
+                <i class="fa fa-exclamation-triangle fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+
+            <button ng-if="notifications.error" tooltip data-toggle="tooltip" data-placement="bottom" title="Show notifications"
+             type="button" class="navbar-map-controls-btn btn btn-danger btn-lg" ng-click="showNotifications()">
+                <i class="fa fa-exclamation-triangle fa-lg fa-fw" aria-hidden="true"></i>
+            </button>
+            -->
+
+            <!-- icon grid -->
+            <div ng-if="iconSize =='small'" class="navbar-map-controls-icon-grid">
+              <!--
+              <div class="btn-group" ng-class='{open: visibilityToggleDropdownOpen}'>
+                <button tooltip data-toggle="dropdown tooltip" data-placement="bottom" title="Show..."
+                 type="button" class="navbar-map-controls-icon-grid-btn-group btn btn-primary dropdown-toggle"
+                 aria-haspopup="true" aria-expanded="false"
+                 ng-click='visibilityToggleDropdownOpen=!visibilityToggleDropdownOpen;'>
+                    <i class="fa fa-eye fa-fw" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" ng-click="selectState('used');visibilityToggleDropdownOpen=false">Used Links</a>
+                  <a class="dropdown-item" ng-click="selectState('unused');visibilityToggleDropdownOpen=false">Unused Links</a>
+                  <a class="dropdown-item" ng-click="selectState('satisfied');visibilityToggleDropdownOpen=false">Satisfied Demands</a>
+                  <a class="dropdown-item" ng-click="selectState('unsatisfied');visibilityToggleDropdownOpen=false">Unsatisfied Demands</a>
+                </div>
+              </div>
+
+              <div class="btn-group" ng-class='{open: hideDropdownOpen}'>
+                <button tooltip data-toggle="dropdown tooltip" data-placement="bottom" title="Hide..."
+                 type="button" class="navbar-map-controls-icon-grid-btn-group btn btn-primary dropdown-toggle"
+                 aria-haspopup="true" aria-expanded="false"
+                 ng-click='hideDropdownOpen=!hideDropdownOpen;'>
+                    <i class="fa fa-eye-slash fa-fw" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" ng-click="selectState('used');hideDropdownOpen=false">Used Links</a>
+                  <a class="dropdown-item" ng-click="selectState('unused');hideDropdownOpen=false">Unused Links</a>
+                  <a class="dropdown-item" ng-click="selectState('satisfied');hideDropdownOpen=false">Satisfied Demands</a>
+                  <a class="dropdown-item" ng-click="selectState('unsatisfied');hideDropdownOpen=false">Unsatisfied Demands</a>
+                </div>
+              </div>
+              -->
+
+              <!--
+              <a tooltip data-toggle="tooltip" data-html="true" data-placement="bottom" title="View/Edit network demands"
+               id="view-btn" class="navbar-map-controls-icon-grid-btn btn btn-primary" role="button"
+               ng-if="$route.current.activeView == 'map'" ng-href="#!/demands/{{mostRecentMap}}">
+                  <i class="fa fa-bar-chart fa-fw" aria-hidden="true"></i>
+              </a>
+              <a tooltip data-toggle="tooltip" data-placement="bottom" title="View network map"
+               id="view-btn" class="navbar-map-controls-icon-grid-btn btn btn-primary" role="button"
+               ng-if="$route.current.activeView == 'demands'" ng-href="#!/map/{{mostRecentMap}}">
+                  <i class="fa fa-map-o fa-fw" aria-hidden="true"></i>
+              </a>
+              -->
+
+              <button ng-if="$route.current.activeView == 'map'" tooltip data-toggle="tooltip" data-placement="bottom" title="Toggle legend on/off"
+               type="button" class="navbar-map-controls-icon-grid-btn btn btn-secondary" ng-click="toggleVisibility('legend')">
+               <i ng-if="legendVisible" class="fa fa-toggle-on fa-fw" aria-hidden="true"></i>
+               <i ng-if="!legendVisible" class="fa fa-toggle-off fa-fw" aria-hidden="true"></i>
+              </button>
+
+              <div ng-if="$route.current.activeView == 'map'" class="btn-group" ng-class='{open: exportDropdownOpen}'>
+                <button tooltip data-toggle="dropdown tooltip" data-placement="bottom" title="Generate analysis report"
+                 type="button" class="navbar-map-controls-icon-grid-btn-group btn btn-secondary dropdown-toggle"
+                 aria-haspopup="true" aria-expanded="false"
+                 ng-click='exportDropdownOpen=!exportDropdownOpen;'>
+                    <i class="fa fa-share fa-fw" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-custom-z-index">
+                  <a class="dropdown-item" ng-click="generateReport('csv');exportDropdownOpen=false"><i class="fa fa-file-text-o" aria-hidden="true"></i> CSV</a>
+                  <a class="dropdown-item" ng-click="generateReport('xlsx');exportDropdownOpen=false"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Excel</a>
+                  <a class="dropdown-item disabled" ng-click="generateReport('pdf');exportDropdownOpen=false"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
+                </div>
+              </div>
+
+              <!--
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="View current status"
+               type="button" class="navbar-map-controls-icon-grid-btn btn btn-success" ng-click="showStatus()">
+                  <i class="fa fa-thumbs-o-up fa-fw" aria-hidden="true"></i>
+              </button>
+              -->
+
+              <!--
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="View current status"
+               type="button" class="navbar-map-controls-icon-grid-btn btn btn-warning" ng-click="showStatus()">
+                  <i class="fa fa-square-o fa-fw" aria-hidden="true"></i>
+              </button>
+              -->
+
+              <!--
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="View current status"
+               type="button" class="navbar-map-controls-icon-grid-btn btn btn-danger" ng-click="showStatus()">
+                  <i class="fa fa-square-o fa-fw" aria-hidden="true"></i>
+                  <i class="fa fa-thumbs-o-down fa-fw" aria-hidden="true"></i>
+              </button>
+              -->
+
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="Important notification"
+               type="button" class="navbar-map-controls-icon-grid-btn btn btn-warning" ng-click="showWarning()">
+                  <!-- <i class="fa fa-exclamation-circle fa-fw" aria-hidden="true"></i> -->
+                  <i class="fa fa-exclamation-triangle fa-fw" aria-hidden="true"></i>
+              </button>
+
+              <!--
+              <button tooltip data-toggle="tooltip" data-placement="bottom" title="Delete"
+               type="button" class="navbar-map-controls-icon-grid-btn btn btn-danger" ng-click="">
+                  <i class="fa fa-trash-o fa-fw" aria-hidden="true"></i>
+              </button>
+              -->
+
+              <!-- <i class="fa fa-share-square-o fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-spinner fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-square-o fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-eraser fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-magic fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-tag fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-tags fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-sitemap fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-toggle-off fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-trash-o fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-sticky-note-o fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-search fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-mouse-pointer fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-hand-pointer-o fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-object-group fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-object-ungroup fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-power-off fa-fw" aria-hidden="true"></i> -->
+              <!-- <i class="fa fa-plug fa-fw" aria-hidden="true"></i> -->
+
+            </div>
+
+            <div class="navbar-status-container">
+              <strong>Status: </strong>
+              <span ng-if="notifications.success" style="color: #00ff0f">{{status}}</span>
+              <span ng-if="notifications.warning" style="color: #ffbb00">{{status}}</span>
+              <span ng-if="notifications.error" style="color: #ff0000">{{status}}</span>
+              <span ng-if="!notifications.success && !notifications.warning && !notifications.error">{{status}}</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div ng-view id="content"></div>
+  </body>
+</html>

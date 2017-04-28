@@ -1,0 +1,313 @@
+{
+    "id": 15,
+    "name": "Tiny Example Network",
+    "lat": 0.0,
+    "lng": 0.0,
+    "inDegrees": true,
+    "nodes": [
+        {
+            "id": 79,
+            "name": "Fort Meade",
+            "lat": 39.05,
+            "lng": -76.75,
+            "inDegrees": true
+        },
+        {
+            "id": 80,
+            "name": "London",
+            "lat": 51.57,
+            "lng": -0.007,
+            "inDegrees": true
+        },
+        {
+            "id": 81,
+            "name": "Sao Paulo",
+            "lat": -23.514,
+            "lng": -46.632,
+            "inDegrees": true
+        },
+        {
+            "id": 82,
+            "name": "Azores",
+            "lat": 38.732,
+            "lng": -27.241,
+            "inDegrees": true
+        },
+        {
+            "id": 83,
+            "name": "Lagos",
+            "lat": 6.449,
+            "lng": 3.488,
+            "inDegrees": true
+        }
+    ],
+    "links": [
+        {
+            "id": 186,
+            "fromNode": 82,
+            "toNode": 79,
+            "name": "Fort Meade <-> Azores",
+            "model": "100BaseT"
+        },
+        {
+            "id": 187,
+            "fromNode": 83,
+            "toNode": 82,
+            "name": "Azores <-> Lagos",
+            "model": "100BaseT"
+        },
+        {
+            "id": 188,
+            "fromNode": 82,
+            "toNode": 81,
+            "name": "Azores <-> Sao Paulo",
+            "model": "100BaseT"
+        },
+        {
+            "id": 189,
+            "fromNode": 81,
+            "toNode": 82,
+            "name": "Azores <-> Sao Paulo",
+            "model": "100BaseT"
+        },
+        {
+            "id": 190,
+            "fromNode": 82,
+            "toNode": 80,
+            "name": "Azores <-> London",
+            "model": "100BaseT"
+        },
+        {
+            "id": 191,
+            "fromNode": 79,
+            "toNode": 82,
+            "name": "Fort Meade <-> Azores",
+            "model": "100BaseT"
+        },
+        {
+            "id": 192,
+            "fromNode": 80,
+            "toNode": 82,
+            "name": "Azores <-> London",
+            "model": "100BaseT"
+        },
+        {
+            "id": 193,
+            "fromNode": 82,
+            "toNode": 83,
+            "name": "Azores <-> Lagos",
+            "model": "100BaseT"
+        }
+    ],
+    "demands": [
+        {
+            "id": 37,
+            "name": "Sao Paulo --> London",
+            "fromNode": 81,
+            "toNode": 80,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 500000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 500000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 500000
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "name": "Fort Meade --> Lagos",
+            "fromNode": 79,
+            "toNode": 83,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 100000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 100000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 100000
+                }
+            ]
+        }
+    ],
+    "subnets": []
+}

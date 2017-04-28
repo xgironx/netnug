@@ -1,0 +1,9 @@
+#Id,Desc,Type,NodeA,Nodez,Direction,Traffic  Id
+11,tn1<==>tn2,Ethernet,tn1,tn2,0,5
+12,tn1<==>tn3,Ethernet,tn1,tn3,0,5
+13,tn1<==>tn4,Ethernet,tn1,tn4,0,5
+14,tn1<==>tn5,Ethernet,tn1,tn5,0,5
+15,tn1<==>tn6,Ethernet,tn1,tn6,0,5
+16,tn1<==>tn7,Ethernet,tn1,tn7,0,5
+17,tn1<==>tn8,Ethernet,tn1,tn8,0,5
+18,tn1<==>tn9,Ethernet,tn1,tn9,0,5

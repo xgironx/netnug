@@ -1,0 +1,64 @@
+<style type="text/css">
+.projects{
+	width: 100%;
+	padding: 10px 50px 10px 50px;
+}
+
+.project {
+	width: 45%;
+}
+
+#new-project {
+	margin: 1em;
+}
+
+.projects .btn {
+  padding: 4px 6px;
+}
+
+.btn-sm {
+  padding: 2px 4px;
+}
+</style>
+
+<div class="projects">
+	<div class="alert alert-warning" ng-if="projects.loading">
+		<strong>Please Wait</strong>
+		Loading project data...
+	</div>
+	<div class="alert alert-danger" ng-if="projects.error">
+		<strong>Error</strong>
+		Could not contact server: {{projects.message}}
+	</div>
+	<div class="alert alert-info" ng-if="projects.empty">
+		<strong>No Projects</strong>
+		You have not created any projects. Create projects using the new project button above.
+	</div>
+
+	<div class="project card" ng-repeat="project in projects.data">
+		<div class="card-block">
+			<h3 class="card-title"><span class="text-muted" ng-if="!project.name">(No name)</span>{{project.name}}
+				<small><code>{{project.id}}</code></small>
+				<a class="btn btn-primary" ng-href="#!/map/{{project.id}}">
+					<i class="fa fa-map-o" aria-hidden="true"></i>
+				</a>
+				<button class="btn btn-danger" ng-click="remove(project.id)">
+					<i class="fa fa-trash-o" aria-hidden="true"></i>
+				</button>
+			</h3>
+			<span class="alert alert-info" ng-if="project.queued"><strong>Queued for Analysis</strong></span>
+			<p class="card-text"><span class="text-muted" ng-if="!project.description">(No description)</span>{{project.description}}</p>
+
+			<div class="card-block" ng-repeat="scenario in project.scenarios">
+				<h4 class="card-title"><span class="text-muted" ng-if="!scenario.name">(No name)</span>{{scenario.name}}
+					<small><code>{{scenario.id}}</code></small>
+					<a class="btn btn-primary btn-sm" ng-href="#!/map/{{scenario.id}}">
+						<i class="fa fa-map-o" aria-hidden="true"></i></a>
+				</h4>
+				<span class="alert alert-info" ng-if="scenario.queued"><strong>Queued for Analysis</strong></span>
+				<p class="card-text"><span class="text-muted" ng-if="!scenario.description">(No description)</span>{{scenario.description}}</p>
+				<!-- <button class="btn btn-danger btn-sm" ng-click="remove(scenario.id)">Delete Project</button> -->
+			</div>
+		</div>
+	</div>
+</div>

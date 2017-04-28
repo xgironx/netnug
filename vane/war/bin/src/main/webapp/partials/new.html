@@ -1,0 +1,23 @@
+<style>
+form {
+	margin: 1em;
+}
+</style>
+
+<form>
+	<h2>New Project</h2>
+	<fieldset class="form-group">
+		<label for="project_name">Project Name</label>
+		<input type="text" class="form-control" placeholder="Example Project" name="project_name" id="project_name" ng-model="project_name"/>
+	</fieldset>
+	<fieldset class="form-group">
+		<label for="project_description">Project Description</label>
+		<textarea class="form-control" name="project_description" id="project_description" ng-model="project_description"></textarea>
+	</fieldset>
+	<fieldset class="form-group">
+		<label for="project_file">OPNET XML File (Optional)</label>
+		<input type="file" class="form-control" name="project_file" id="project_file" ng-model="project_file" data-file-upload="" />
+	</fieldset>
+	<button ng-if="project_file != null" class="btn btn-primary btn-submit" ng-click="uploadFile()">Upload</button>
+	<button ng-if="project_file == null" class="btn btn-primary btn-submit" ng-click="newProject()">New</button>
+</form>

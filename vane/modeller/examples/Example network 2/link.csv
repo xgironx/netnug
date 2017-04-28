@@ -1,0 +1,9 @@
+#NodeA,NodeZ,Link,Capacity,PortA,PortZ,Direction,Type
+tn5,tn1,tl1,100000000,1,1,0,"""ethernet"""
+tn5,tn2,tl2,100000000,2,1,0,"""ethernet"""
+tn5,tn3,tl3,100000000,3,1,0,"""ethernet"""
+tn5,tn4,tl4,100000000,4,1,0,"""ethernet"""
+tn5,tn6,tl5,100000000,5,1,0,"""ethernet"""
+tn5,tn7,tl6,100000000,6,1,0,"""ethernet"""
+tn5,tn8,tl7,100000000,7,1,0,"""ethernet"""
+tn5,tn9,tl8,100000000,8,1,0,"""ethernet"""

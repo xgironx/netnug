@@ -1,0 +1,606 @@
+{
+    "id": 13,
+    "name": "Medium Example Network",
+    "lat": 0.0,
+    "lng": 0.0,
+    "inDegrees": true,
+    "nodes": [
+        {
+            "id": 67,
+            "name": "Azores",
+            "lat": 38.732,
+            "lng": -27.241,
+            "inDegrees": true
+        },
+        {
+            "id": 68,
+            "name": "Lagos",
+            "lat": 6.449,
+            "lng": 3.488,
+            "inDegrees": true
+        },
+        {
+            "id": 69,
+            "name": "London",
+            "lat": 51.57,
+            "lng": -0.007,
+            "inDegrees": true
+        },
+        {
+            "id": 70,
+            "name": "Sao Paulo",
+            "lat": -23.514,
+            "lng": -46.632,
+            "inDegrees": true
+        },
+        {
+            "id": 71,
+            "name": "Fort Meade",
+            "lat": 39.05,
+            "lng": -76.75,
+            "inDegrees": true
+        }
+    ],
+    "links": [
+        {
+            "id": 160,
+            "fromNode": 67,
+            "toNode": 71,
+            "name": "Fort Meade <-> Azores",
+            "model": "100BaseT"
+        },
+        {
+            "id": 161,
+            "fromNode": 71,
+            "toNode": 67,
+            "name": "Fort Meade <-> Azores",
+            "model": "100BaseT"
+        },
+        {
+            "id": 162,
+            "fromNode": 67,
+            "toNode": 70,
+            "name": "Azores <-> Sao Paulo",
+            "model": "100BaseT"
+        },
+        {
+            "id": 163,
+            "fromNode": 76,
+            "toNode": 68,
+            "name": "Lagos <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 164,
+            "fromNode": 70,
+            "toNode": 67,
+            "name": "Azores <-> Sao Paulo",
+            "model": "100BaseT"
+        },
+        {
+            "id": 165,
+            "fromNode": 67,
+            "toNode": 69,
+            "name": "Azores <-> London",
+            "model": "100BaseT"
+        },
+        {
+            "id": 166,
+            "fromNode": 69,
+            "toNode": 67,
+            "name": "Azores <-> London",
+            "model": "100BaseT"
+        },
+        {
+            "id": 167,
+            "fromNode": 67,
+            "toNode": 68,
+            "name": "Azores <-> Lagos",
+            "model": "100BaseT"
+        },
+        {
+            "id": 168,
+            "fromNode": 76,
+            "toNode": 69,
+            "name": "London <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 169,
+            "fromNode": 68,
+            "toNode": 76,
+            "name": "Lagos <-> Egypt Subnet",
+            "model": "1000BaseX"
+        },
+        {
+            "id": 170,
+            "fromNode": 68,
+            "toNode": 67,
+            "name": "Azores <-> Lagos",
+            "model": "100BaseT"
+        },
+        {
+            "id": 171,
+            "fromNode": 69,
+            "toNode": 76,
+            "name": "London <-> Egypt Subnet",
+            "model": "1000BaseX"
+        }
+    ],
+    "demands": [
+        {
+            "id": 34,
+            "name": "Sao Paulo --> London",
+            "fromNode": 70,
+            "toNode": 69,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 50000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 50000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 50000
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "name": "Fort Meade --> Lagos",
+            "fromNode": 71,
+            "toNode": 68,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 10000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 10000
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "name": "Fort Meade --> Nile Gateway",
+            "fromNode": 71,
+            "toNode": 76,
+            "traffic": [
+                {
+                    "time": 0,
+                    "amount": 10000
+                },
+                {
+                    "time": 3600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 7200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 10800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 14400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 18000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 21600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 25200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 28800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 32400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 36000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 39600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 43200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 46800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 50400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 54000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 57600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 61200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 64800.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 68400.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 72000.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 75600.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 79200.0,
+                    "amount": 10000
+                },
+                {
+                    "time": 82800.0,
+                    "amount": 10000
+                }
+            ]
+        }
+    ],
+    "subnets": [
+        {
+            "id": 14,
+            "name": "Egypt Subnet",
+            "lat": 30.09,
+            "lng": 31.22,
+            "inDegrees": true,
+            "nodes": [
+                {
+                    "id": 72,
+                    "name": "Nile 4",
+                    "lat": 24.93,
+                    "lng": 32.89,
+                    "inDegrees": true
+                },
+                {
+                    "id": 73,
+                    "name": "Nile 2",
+                    "lat": 28.086,
+                    "lng": 30.758,
+                    "inDegrees": true
+                },
+                {
+                    "id": 74,
+                    "name": "Nile 0",
+                    "lat": 31.301,
+                    "lng": 29.915,
+                    "inDegrees": true
+                },
+                {
+                    "id": 75,
+                    "name": "Nile 1",
+                    "lat": 30.075,
+                    "lng": 31.241,
+                    "inDegrees": true
+                },
+                {
+                    "id": 76,
+                    "name": "Nile Gateway",
+                    "lat": 31.415,
+                    "lng": 27.149,
+                    "inDegrees": true
+                },
+                {
+                    "id": 77,
+                    "name": "Nile 3",
+                    "lat": 26.56,
+                    "lng": 31.683,
+                    "inDegrees": true
+                },
+                {
+                    "id": 78,
+                    "name": "Nile 5",
+                    "lat": 23.71,
+                    "lng": 32.27,
+                    "inDegrees": true
+                }
+            ],
+            "links": [
+                {
+                    "id": 172,
+                    "fromNode": 74,
+                    "toNode": 76,
+                    "name": "Nile Gateway <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 173,
+                    "fromNode": 77,
+                    "toNode": 72,
+                    "name": "Nile 3 <-> Nile 4",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 174,
+                    "fromNode": 76,
+                    "toNode": 78,
+                    "name": "Nile 5 <-> Nile Gateway",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 175,
+                    "fromNode": 78,
+                    "toNode": 76,
+                    "name": "Nile 5 <-> Nile Gateway",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 176,
+                    "fromNode": 75,
+                    "toNode": 74,
+                    "name": "Nile 1 <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 177,
+                    "fromNode": 72,
+                    "toNode": 78,
+                    "name": "Nile 4 <-> Nile 5",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 178,
+                    "fromNode": 77,
+                    "toNode": 73,
+                    "name": "Nile 2 <-> Nile 3",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 179,
+                    "fromNode": 72,
+                    "toNode": 77,
+                    "name": "Nile 3 <-> Nile 4",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 180,
+                    "fromNode": 73,
+                    "toNode": 75,
+                    "name": "Nile 1 <-> Nile 2",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 181,
+                    "fromNode": 75,
+                    "toNode": 73,
+                    "name": "Nile 1 <-> Nile 2",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 182,
+                    "fromNode": 74,
+                    "toNode": 75,
+                    "name": "Nile 1 <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 183,
+                    "fromNode": 76,
+                    "toNode": 74,
+                    "name": "Nile Gateway <-> Nile 0",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 184,
+                    "fromNode": 73,
+                    "toNode": 77,
+                    "name": "Nile 2 <-> Nile 3",
+                    "model": "100BaseT"
+                },
+                {
+                    "id": 185,
+                    "fromNode": 78,
+                    "toNode": 72,
+                    "name": "Nile 4 <-> Nile 5",
+                    "model": "100BaseT"
+                }
+            ],
+            "demands": [],
+            "subnets": []
+        }
+    ]
+}

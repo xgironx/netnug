@@ -1,0 +1,37 @@
+<style type="text/css">
+
+[link-traffic-legend] {
+  position: absolute;
+  z-index: 5000;
+  height: 15em;
+  width: 8em;
+  top: 1em;
+  right: 9em;
+  font-size: 1rem;
+  background-color: white;
+  opacity: 0.7;
+}
+
+[link-utilization-legend] {
+  position: absolute;
+  z-index: 5000;
+  height: 15em;
+  width: 8em;
+  top: 1em;
+  right: 1em;
+  font-size: 1rem;
+  background-color: white;
+  opacity: 0.7;
+}
+
+</style>
+
+<div id="main-root">
+  <div id="main-content">
+    <div vane-sidebar id="left-sidebar"></div>
+    <div id="main-view">
+      <!-- <div link-traffic-legend id="linkTrafficMarkerLegend" class="leaflet-bar"></div> -->
+      <div link-utilization-legend id="linkUtilizationLegend" class="leaflet-bar"></div>
+    </div>
+  </div>
+</div>
